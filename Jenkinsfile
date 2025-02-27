@@ -6,7 +6,7 @@ pipeline {
     }
 
     triggers {
-        pullSCM: "* * * * *"
+        pollSCM('* * * * *') // Runs every minute, adjust as needed
     }
 
     environment {
