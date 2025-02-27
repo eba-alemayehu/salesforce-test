@@ -6,7 +6,7 @@ pipeline {
     }
 
     triggers {
-        pullSCM "* * * * *"
+        pullSCM: "* * * * *"
     }
 
     environment {
