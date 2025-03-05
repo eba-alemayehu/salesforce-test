@@ -18,6 +18,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 script {
+                    sh 'sf help'
                     sh 'git clone https://github.com/eba-alemayehu/salesforce-test.git salesforce-metadata'
                     dir('salesforce-metadata') {
                         sh 'git checkout main'
